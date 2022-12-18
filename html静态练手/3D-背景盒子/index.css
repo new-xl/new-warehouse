@@ -1,0 +1,66 @@
+body {
+  text-align: center;
+}
+.magic {
+  transition: 0.4s ease;
+}
+.magic:active {
+  transform: translateY(2px);
+}
+.page_list {
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+  padding: 15px;
+  width: 500px;
+  height: 300px;
+  font-size: 0px;
+}
+.page_list .page {
+  display: inline-block;
+  width: 133px;
+  height: 71px;
+  background: url(static/龙猫.gif);
+  margin-left: 20px;
+  margin-top: 20px;
+  position: relative;
+  z-index: 999;
+  transition: 0.4s ease;
+}
+.page_list .page:nth-child(3n+1) {
+  background-position-x: 0;
+}
+.page_list .page:nth-child(3n+2) {
+  background-position-x: -133px;
+}
+.page_list .page:nth-child(3n) {
+  background-position-x: -266px;
+}
+.page_list .page:nth-child(n+4) {
+  background-position-y: -73px;
+}
+.page_list .page:nth-child(n+7) {
+  background-position-y: -142px;
+}
+.page_list .page:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 8px;
+  right: -15px;
+  height: 100%;
+  width: 15px;
+  transform: skewY(45deg);
+  background-color: #97b4e0;
+}
+.page_list .page::before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  bottom: -15px;
+  left: 8px;
+  width: 100%;
+  height: 15px;
+  transform: skewX(45deg);
+  background-color: #769de6;
+}
