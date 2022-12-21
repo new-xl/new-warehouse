@@ -1,0 +1,60 @@
+.page {
+  width: 200vh;
+  height: 100vh;
+  background: url(/static/backgroud-imgs/背景图-1.jpg) no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+.page:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.page:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: url(/static/backgroud-imgs/背景图-1.jpg) no-repeat;
+  background-size: 200vh 100vh;
+  clip-path: inset(20% 25% 20% 25%);
+  z-index: 2;
+}
+.page .center-img {
+  width: 80%;
+  height: 75%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.page .center-img .arrow {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+}
+.page .center-img .arrow-left {
+  left: 0;
+  transform: translate(-110%, -50%);
+  background: url(/static/左箭头.jpg);
+  background-size: 100% 100%;
+  border: 1px solid #333;
+}
+.page .center-img .arrow-right {
+  right: 0;
+  transform: translate(110%, -50%);
+  background: url(/static/右箭头.jpg);
+  background-size: 100% 100%;
+  border: 1px solid #333;
+}
