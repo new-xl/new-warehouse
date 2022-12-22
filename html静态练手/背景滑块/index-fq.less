@@ -3,18 +3,10 @@
     height: 100vh;
     position: relative;
     .c-img{
-        width: 45%;
-        height: 45%;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%,-50%);
-        // background: url(/static/backgroud-imgs/背景图-1.jpg) no-repeat;
+        width: 100%;
+        height: 100%;
+        background: url(/static/backgroud-imgs/背景图-1.jpg) no-repeat;
         background-size: 100% 100%;
-        transition: transform 1.5s ease;
-    }
-    .ttt{
-        transform: translate(-50%,-50%) scale(2);
     }
     &:after{
         content: '';
@@ -26,34 +18,29 @@
         height: 100%;
         background-color: rgba(0, 0, 0, 0.3);
         z-index: 1;
-    } 
-    .center-img{
-        width: 45%;
-        height: 45%;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%,-50%);
-        overflow:hidden;
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-        z-index: 2;
-        .tt-img{
-            display: inline-block;
-            width: 100%;
-            height: 100%;
-            transform:scale(2);
-            // background: url(/static/backgroud-imgs/背景图-1.jpg) no-repeat;
-            background-size: 100% 100%;
-        }
     }
-    .arrow_lest{
-        width: 45%;
-        height: 45%;
+    &:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background: url(/static/backgroud-imgs/背景图-1.jpg)no-repeat;
+        background-size: 200vh 100vh;
+        clip-path: inset(20% 25% 20% 25%);
+        z-index: 2;
+    }  
+    .center-img{
+        width: 80%;
+        height: 75%;
+        // border: 100vh solid rgba(0, 0, 0, 0.3);
         position: absolute;
         left: 50%;
         top: 50%;
         transform: translate(-50%,-50%);
-        z-index: 3;
+        // z-index: 1;
         .arrow{
             display: inline-block;
             width: 80px;

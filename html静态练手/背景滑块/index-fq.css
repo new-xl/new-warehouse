@@ -4,17 +4,10 @@
   position: relative;
 }
 .page .c-img {
-  width: 45%;
-  height: 45%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: url(/static/backgroud-imgs/背景图-1.jpg) no-repeat;
   background-size: 100% 100%;
-  transition: transform 1.5s ease;
-}
-.page .ttt {
-  transform: translate(-50%, -50%) scale(2);
 }
 .page:after {
   content: '';
@@ -27,48 +20,42 @@
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 1;
 }
-.page .center-img {
-  width: 45%;
-  height: 45%;
+.page:before {
+  content: '';
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  overflow: hidden;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  z-index: 2;
-}
-.page .center-img .tt-img {
+  top: 0;
+  left: 0;
   display: inline-block;
   width: 100%;
   height: 100%;
-  transform: scale(2);
-  background-size: 100% 100%;
+  background: url(/static/backgroud-imgs/背景图-1.jpg) no-repeat;
+  background-size: 200vh 100vh;
+  clip-path: inset(20% 25% 20% 25%);
+  z-index: 2;
 }
-.page .arrow_lest {
-  width: 45%;
-  height: 45%;
+.page .center-img {
+  width: 80%;
+  height: 75%;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  z-index: 3;
 }
-.page .arrow_lest .arrow {
+.page .center-img .arrow {
   display: inline-block;
   width: 80px;
   height: 80px;
   position: absolute;
   top: 50%;
 }
-.page .arrow_lest .arrow-left {
+.page .center-img .arrow-left {
   left: 0;
   transform: translate(-110%, -50%);
   background: url(/static/左箭头.jpg);
   background-size: 100% 100%;
   border: 1px solid #333;
 }
-.page .arrow_lest .arrow-right {
+.page .center-img .arrow-right {
   right: 0;
   transform: translate(110%, -50%);
   background: url(/static/右箭头.jpg);
