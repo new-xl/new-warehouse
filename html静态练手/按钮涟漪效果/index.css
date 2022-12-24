@@ -1,0 +1,43 @@
+.page {
+  width: 200vh;
+  height: 100vh;
+  background-color: #333;
+  position: relative;
+}
+.page .button_father {
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+.page .button_father .button {
+  width: 100%;
+  height: 100%;
+  background-color: darkorchid;
+  font-size: 25px;
+  font-weight: bold;
+}
+.page .button_father .ripple {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background-color: #f2e7e7;
+  opacity: 0.8;
+  border-radius: 50% 50%;
+  transform: scale(0);
+  z-index: 1;
+}
+.ttt {
+  animation: scale 1s ease-out;
+}
+@keyframes scale {
+  to {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+  }
+}
