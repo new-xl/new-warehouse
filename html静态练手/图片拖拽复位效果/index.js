@@ -20,8 +20,7 @@ function drag_start() {
 }
 
 function drag_end() {
-    // this.className = 'content_img'
-    console.log('1111');
+    this.className = 'content_img'
 }
 
 

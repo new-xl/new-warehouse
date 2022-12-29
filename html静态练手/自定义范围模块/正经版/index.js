@@ -2,7 +2,6 @@ const ran = document.querySelector('#ran')
 const lab = document.querySelector('.lab')
 const ttt = document.querySelector('.ttt')
 
-
 ran.addEventListener('input',function (e) {
     const tar = e.target
     const tar_value = tar.value
@@ -15,6 +14,7 @@ ran.addEventListener('input',function (e) {
     const ratio = num_width / max 
     var ttt_left =  (tar_value*ratio) - (num_label_width/2) +scale(tar_value, min, max, 10, -10)
     ttt.style.left = ttt_left + 'px'
+    lab.innerHTML = tar_value
 })
 
 //  0,100,10,-10
