@@ -1,0 +1,89 @@
+.page{
+    width: 100vw;
+    height: 100vh;
+    background-color: aquamarine;
+    .content{
+        width: 50%;
+        height: 100%;
+        margin: 0 auto;
+        padding-top: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .title{
+            text-align: center;
+            color: #fff;
+        }
+        .subtitle{
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        .container{
+            width: 300px;
+            height: 500px;
+            border-radius: 0 0 30% 30%;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            border: 2px solid #333;
+            .container_text{
+                flex: 1;
+                height: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: #fff;
+                color: aquamarine;
+                .container_number{
+                    font-size: 20px;
+                }
+                .container_prompt{
+                    font-size: 12px;
+                }
+            }
+            .container_progress{
+                width: 100%;
+                height: 0%;
+                background-color: aquamarine;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-size: 25px;
+                color: #fff;
+            }
+        }
+        .cup_title{
+            margin-top: 15px;
+            font-size: 16px;
+            letter-spacing: 5px;
+            color: #fff;
+        }
+        .cup_father{
+            width: 300px;
+            height: 200px;
+            display: flex;
+            flex-wrap: wrap;
+            .cup{
+                flex: 20%;
+                background-color: #fff;
+                margin: 5px;
+                border-radius: 0 0 30% 30%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-size: 12px;
+                border: 2px solid #333;
+                cursor: pointer;
+            }
+            .ttt{
+                background-color: aquamarine;
+            }
+        }
+    }
+}
