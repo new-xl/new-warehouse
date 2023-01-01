@@ -1,0 +1,23 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "33385421",
+      "name": "关闭_close",
+      "font_class": "guanbi_close",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "33385995",
+      "name": "下_down",
+      "font_class": "xia_down",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    }
+  ]
+}
