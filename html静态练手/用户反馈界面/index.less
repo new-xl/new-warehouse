@@ -1,0 +1,111 @@
+.page{
+    width: 100vw;
+    height: 100vh;
+    background-color: burlywood;
+    padding-top: 1px;
+    position: relative;
+    .title{
+        margin: o auto;
+        text-align: center;
+        margin-top: 50px;
+        font: normal bold 30px 隶书,宋体,楷书;
+        letter-spacing: 30px;
+        color: #fff;
+    }
+    .content{
+        width: 25%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        .feedback{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .feedback_title{
+                width: 100%;
+                text-align: center;
+                .title_text{
+                    font: normal bold 16px 华文彩云,宋体,楷书;
+                    letter-spacing: 13px;
+                }
+            }
+            .feedback_content{
+                margin-top: 20px;
+                width: 100%;
+                height: 150px;
+                display: flex;
+                // justify-content: space-around;   
+                .box{
+                    flex: 1;
+                    margin: 15px;
+                    background-color: #fff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                    cursor: pointer;
+                    span{
+                        display: inline-block;
+                        width: 50%;
+                        height: 50%;
+                        text-align: center;
+                        font: normal 300 12px 宋体;
+                    }
+                    &:nth-child(2){
+                        span{
+                            align-self: center;
+                        }
+                    }
+                    &:hover{
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                    }
+                }
+                .shadow{
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                }
+            }
+            .feedback_but{
+                width: 35%;
+                height: 50px;
+                border-radius: 15px;
+                font-size: 20px;
+                color: #fff;
+                background-color: black;
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+        }
+        .thank{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+            .iconfont{
+                font-size: 35px;
+                color: red;
+                margin-bottom: 12px;
+                text-align: center;
+            }
+            .thank_text{
+                text-align: center;
+                font: normal 900 16px 宋体,楷书;
+                letter-spacing: 5px;
+            }
+            .thank_feedback{
+                margin-top: 12px;
+            }
+            .concluding_remarks{
+                width: 100%;
+                p{
+                    text-align: center;
+                    padding-left: 30px;
+                    padding-right: 30px;
+                    letter-spacing: 12px;
+                    color: gray;
+                }
+            }
+        }    
+    }
+}
