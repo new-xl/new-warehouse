@@ -1,0 +1,94 @@
+.page{
+    width: 100vw;
+    height: 100vh;
+    background-color: #1da1f2;
+    position: relative;
+    .login{
+        width: 380px;
+        height: 460px;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        padding: 20px 40px;
+        transform: translate(-50%,-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .login_title{
+            flex: 2;
+            font: normal bold 50px 隶书;
+            line-height: 96px;
+        }
+        .login_from{
+            flex: 8;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .from_css{
+                width: 100%;
+                height: 20%;
+                // background-color: blue;
+                margin-top: 30px;
+                position: relative;
+                input{
+                    background-color: transparent;
+                    border: 0;
+                    border-bottom: 2px #b5bec7 solid;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    padding: 15px 0;
+                    color: #000;
+                    font-size: 18px;
+                    outline: 0;
+                    padding: 0;
+                    box-shadow: 0 0 0px 1000px #fff inset;
+                    &:focus{
+                        border-bottom: 2px #1da1f2 solid;
+                        +label span{
+                            color: #1da1f2;
+                            transform: translateY(-30px);
+                            opacity: 1;
+                        } 
+                    }
+                }
+                .prompt{
+                    position: absolute;
+                    bottom: 18px;
+                    left: 0;
+                    font-size: 18px;
+                    span{
+                        opacity: 0.5;
+                        display: inline-block;
+                        font-size: 18px;
+                        transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+                    }
+                    .ttt{
+                        opacity: 1;
+                        color: #1da1f2;
+                        transform: translateY(-30px);
+                    }
+                }
+                .but{
+                    width: 100%;
+                    height: 100%;
+                    background-color: #1da1f2;
+                    border-radius: 5px;
+                    color: #fff;
+                    font-size: 18px;
+                    letter-spacing: 12px;
+                    border: 0;
+                }
+                .bottom_prompt_text{
+                    letter-spacing: 3px;
+                }
+                .register{
+                    text-decoration: none; 
+                    color: #1da1f2;
+                }
+            }
+        }
+    }
+}
