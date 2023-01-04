@@ -1,0 +1,24 @@
+.page{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+    .content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 30%;
+        height: 80%;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .bibi{
+            box-sizing: border-box;
+            border: 0 solid black;
+            background-color: gray;
+            transition: background-color .1s ease;
+        }
+    }
+}
