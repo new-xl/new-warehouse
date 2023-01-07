@@ -1,0 +1,103 @@
+.page {
+  width: 100vw;
+  height: 100vh;
+}
+.page .content {
+  margin: 0 auto;
+  width: 20%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.page .content .content_head {
+  box-sizing: border-box;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: blue;
+}
+.page .content .content_head .head_title {
+  margin-top: 10px;
+  font: normal bold 25px 隶书;
+  letter-spacing: 5px;
+  color: #fff;
+}
+.page .content .content_head .head_subtitle {
+  margin-top: 5px;
+  letter-spacing: 5px;
+  color: #e3d1d1;
+}
+.page .content .content_head .search {
+  margin-top: 10px;
+  padding: 0 10px;
+  width: 70%;
+  height: 35px;
+  border-radius: 15px;
+  outline: 0;
+  border: 0;
+  font-size: 16px;
+}
+.page .content .content_head .search::placeholder {
+  color: #938888;
+}
+.page .content .content_users {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.page .content .content_users .content_user {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  border-bottom: 1px solid gray;
+}
+.page .content .content_users .content_user .user_picture {
+  flex: 2;
+  display: flex;
+  justify-content: flex-start;
+}
+.page .content .content_users .content_user .user_picture .picture {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  background-size: 100%,100%;
+  background-repeat: no-repeat;
+}
+.page .content .content_users .content_user .user_content {
+  flex: 8;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
+.page .content .content_users .content_user .user_content .name {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.page .content .content_users .ttt {
+  display: none;
+}
+.page .content .content_users .loding {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
+  position: relative;
+}
+.page .content .content_users .loding span {
+  background: -webkit-linear-gradient(top, #00ff44, #ffc400);
+  -webkit-background-clip: text;
+  color: rgba(0, 0, 0, 0);
+  margin: 3px;
+  display: inline-block;
+  transform: translateY(0);
+  transition: transform 0.3s linear;
+}
+.page .content .content_users .loding .kkk {
+  transform: translateY(-40%);
+}
