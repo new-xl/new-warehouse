@@ -2,6 +2,7 @@ const search = document.querySelector('.search')
 const content_users = document.querySelector('.content_users')
 const loding = document.querySelector('.loding')
 const loding_strong = loding.querySelector('strong')
+const content = document.querySelector('.content')
 
 let loding_text = loding_strong.innerText
 
@@ -83,7 +84,6 @@ function promise_xhr(new_url) {
 
 
 let turn_on = true
-let nub = 0
 let lock = true
 let data_lest = []
 let data_table = []
@@ -108,12 +108,12 @@ async function send_request(num = 8,) {
 }
 send_request()
 
-
+let node_num = 0
 
 function add_node(results) {
+    node_num = node_num + 8
     loding.classList.add('ttt')
     results.forEach((user,index)=>{
-        nub++
         let user_li = document.createElement('div')
         user_li.className = 'content_user'
         user_li.dataset['index'] = index
@@ -134,9 +134,13 @@ function add_node(results) {
 
 let sce_value = ''
 let search_result = []
+let pull_lock = true
 search.addEventListener('input',function (e) {
     sce_value = this.value
+    pull_lock = false
     if (this.value.trim() == '') {
+        pull_lock = true
+        node_num = 0
         let bk = []
         search_result = []
         for (let index = 0; index < 8; index++) {
@@ -203,5 +207,25 @@ search.addEventListener('input',function (e) {
 
 
 //下拉加载更多
+window.addEventListener('scroll',function () {
+    // console.log( '当前整个页面的高度：'+document.documentElement.scrollHeight);
+    // console.log('当前整个页面可视区的高度：'+document.documentElement.clientHeight);
+    // console.log('当前整个页面卷曲的高度：'+ document.documentElement.scrollTop);
+    let element_scrh = document.documentElement.scrollHeight
+    let element_clih = document.documentElement.clientHeight
+    let element_scrt = document.documentElement.scrollTop
+    if ((element_scrt+element_clih) ==element_scrh) {
+        if (pull_lock) {
+            if (node_num+16 >data_lest.length) {
+                send_request(100)
+                let new_data = data_lest.slice(node_num,node_num+8)
+                add_node(new_data)
+            }else{
+                let new_data = data_lest.slice(node_num,node_num+8)
+                add_node(new_data)
+            }
 
-
+        }
+        
+    }
+})
