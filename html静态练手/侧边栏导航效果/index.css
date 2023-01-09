@@ -1,0 +1,143 @@
+.page {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+}
+.page .content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.page .content .side_icon {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  cursor: pointer;
+}
+.page .content .side_icon i {
+  font: normal bold 40px 宋体;
+}
+.page .content .side_navigation {
+  width: 400px;
+  height: 100%;
+  background-color: yellow;
+}
+.page .content .side_navigation .outer_layer {
+  width: 370px;
+  height: 100%;
+  background-color: red;
+}
+.page .content .side_navigation .outer_layer .middle_layer {
+  width: 340px;
+  height: 100%;
+  background-color: black;
+}
+.page .content .side_navigation .outer_layer .middle_layer .inner_layer {
+  width: 310px;
+  height: 100%;
+  background-color: white;
+  box-sizing: border-box;
+  padding-top: 30px;
+}
+.page .content .side_navigation .outer_layer .middle_layer .inner_layer .shut_down {
+  position: fixed;
+  top: 30px;
+  left: 230px;
+  font: normal bold 30px 隶书;
+  color: gray;
+  cursor: pointer;
+}
+.page .content .side_navigation .outer_layer .middle_layer .inner_layer .navigation_content {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+.page .content .side_navigation .outer_layer .middle_layer .inner_layer .navigation_content li {
+  list-style: none;
+  margin-top: 10px;
+  color: aqua;
+  cursor: pointer;
+}
+.page .content .side_navigation .outer_layer .middle_layer .inner_layer .navigation_content .sun_branch {
+  font-size: 25px;
+}
+.page .content .side_navigation .outer_layer .middle_layer .inner_layer .navigation_content .sun_branch .refinement {
+  display: none;
+  font-size: 18px;
+}
+.page .content .side_navigation .outer_layer .middle_layer .inner_layer .navigation_content .sun_branch .kkk {
+  display: block;
+}
+.page .content .side_navigation .outer_layer .middle_layer .inner_layer .navigation_content .bibi span {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+.page .content .side_navigation .outer_layer .middle_layer .inner_layer .navigation_content .bibi span:after {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 80%;
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  transform: translateY(-50%);
+  background-color: red;
+}
+.page .content .center_logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page .content .center_logo strong {
+  font: italic bold 35px 华文彩云;
+}
+.page .content .nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(0);
+  transition: transform 0.2s ease-in-out;
+}
+.page .content .k {
+  transition-delay: 0s;
+}
+.page .content .k .outer_layer {
+  transition-delay: 0.1s;
+}
+.page .content .k .outer_layer .middle_layer {
+  transition-delay: 0.2s;
+}
+.page .content .k .outer_layer .middle_layer .inner_layer {
+  transition-delay: 0.3s;
+}
+.page .content .pipi {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  transition: transform 0.2s ease-in-out;
+}
+.page .content .l {
+  transition-delay: 0.3s;
+}
+.page .content .l .outer_layer {
+  transition-delay: 0.2s;
+}
+.page .content .l .outer_layer .middle_layer {
+  transition-delay: 0.1s;
+}
+.page .content .l .outer_layer .middle_layer .inner_layer {
+  transition-delay: 0s;
+}
+.page .logo {
+  width: 200px;
+  height: 200px;
+  background-image: url(/static/images/Logo/logo.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
