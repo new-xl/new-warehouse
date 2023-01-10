@@ -1,0 +1,124 @@
+.page{
+    width: 100vw;
+    height: 100vh;
+    background-color: cornflowerblue;
+    .content{
+        width: 100%;
+        min-height: 100vh;
+        background-color: cornflowerblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .password_interface{
+            width: 450px;
+            height: 500px;
+            box-sizing: border-box;
+            padding: 20px;
+            background-color: blue;
+            border-radius: 15px;
+            box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .title{
+                font-size: 30px;
+                letter-spacing: 5px;
+                color: white;
+            }
+            .password_text{
+                width: 100%;
+                height: 40px;
+                box-sizing: border-box;
+                padding-left: 20px;
+                padding-right: 20px;
+                position: relative;
+                .text{
+                    display: inline-block;
+                    width: 100%;
+                    height: 40px;
+                    // white-space: nowrap;
+                    word-wrap: break-word;
+                    background-color: rgba(0, 0, 0, 0.4);
+                    font-size: 25px;
+                }
+                .iconfont{
+                    position: absolute;
+                    box-sizing: border-box;
+                    width: 30px;
+                    height: 30px;
+                    text-align: center;
+                    top: 50%;
+                    right: 30px;
+                    transform: translateY(-50%);
+                    font-size: 25px;
+                    background-color: cornflowerblue;
+                    color: #fff;
+                    cursor: pointer;
+                }
+            }
+            .generate_option{
+                margin-top: 20px;
+                width: 100%;
+                height: 320px;
+                display: flex;
+                flex-direction: column;
+                .option{
+                    flex: 1;
+                    width: 100%;
+                    box-sizing: border-box;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-size: 20px;
+                    color: white;
+                    input{
+                       width: 20px;
+                       height: 20px;
+                       cursor: pointer;
+                    }
+                    #length{
+                        width: 50px;
+                    }
+                }
+                .option_but{
+                    margin-top: 20px;
+                    flex: 1;
+                    width: 100%;
+                    box-sizing: border-box;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    .but{
+                        background-color: cornflowerblue;
+                        width: 100%;
+                        border-radius: 12px;
+                        font-size: 20px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .copy_interface{
+            width: 450px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .copy_password{
+                box-sizing: border-box;
+                padding-left: 20px;
+                padding-right: 20px;
+                width: 100%;
+                height: 40px;
+                font-size: 25px;
+                background-color: white;
+                border-bottom: 1px solid gray;
+            }
+        }
+        .kkk{
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/iconfont/iconfont.css">
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div class="page">
+        <div class="content">
+            <div class="password_interface">
+                <h3 class="title">随机密码生成界面</h3>
+                <div class="password_text">
+                    <span class="text"></span>
+                    <i class="iconfont icon-dayinji_printer"></i>
+                </div>
+                <div class="generate_option">
+                    <div class="option_length option">
+                        <label class="password_length" for="length">密码的长度：</label>
+                        <input type="number" min="4" max="20" value="20" id="length">
+                    </div>
+                    <div class="option_uppercase option">
+                        <label for="uppercase">请选择是否添加大写字母</label>
+                        <input type="checkbox" name="" id="uppercase" checked>
+                    </div>
+                    <div class="option_lowercase option">
+                        <label for="lowercase">请选择是否添加大写字母</label>
+                        <input type="checkbox" name="" id="lowercase" checked>
+                    </div>
+                    <div class="option_uppercase option">
+                        <label for="numbers">请选择是否添加数字</label>
+                        <input type="checkbox" name="" id="numbers" checked>
+                    </div>
+                    <div class="option_character option">
+                        <label for="character">请选择是否添加特殊字符</label>
+                        <input type="checkbox" name="" id="character" checked>
+                    </div>
+                    <div class="option_but">
+                        <button class="but">生成</button>
+                    </div>
+                </div>
+            </div>
+            <div class="copy_interface kkk">
+            </div>
+        </div>
+    </div>
+    <script src="/index.js"></script>
+</body>
+</html>
