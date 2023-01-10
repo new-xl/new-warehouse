@@ -1,0 +1,108 @@
+.page {
+  width: 100vw;
+  height: 100vh;
+  background-color: aqua;
+}
+.page .content {
+  width: 100%;
+  background-color: aqua;
+}
+.page .content .head {
+  width: 100%;
+  height: 50px;
+  background-color: burlywood;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  padding-right: 50px;
+}
+.page .content .head .add {
+  width: auto;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+  background-color: blueviolet;
+  cursor: pointer;
+  overflow: hidden;
+}
+.page .content .head .add .iconfont {
+  font-size: 30px;
+  transform: rotate(0deg);
+  transition: transform 0.3s linear;
+  color: white;
+}
+.page .content .head .add span {
+  width: 0px;
+  white-space: nowrap;
+  font-size: 16px;
+  line-height: 16px;
+  margin-left: 3px;
+  overflow: hidden;
+  transition: width 0.3s linear;
+}
+.page .content .head .add .www {
+  width: 68px;
+}
+.page .content .head .add .ttt {
+  transform: rotate(720deg);
+}
+.page .content .note_father {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 30px;
+}
+.page .content .note_father .sub_note {
+  width: 400px;
+  height: 500px;
+  margin: 20px;
+}
+.page .content .note_father .sub_note .operation {
+  width: 100%;
+  height: 50px;
+  background-color: greenyellow;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-sizing: border-box;
+  padding-right: 15px;
+}
+.page .content .note_father .sub_note .operation .iconfont {
+  font-size: 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+.page .content .note_father .sub_note .subject {
+  width: 100%;
+  height: 450px;
+}
+.page .content .note_father .sub_note .subject .subject_textarea {
+  width: 100%;
+  height: 100%;
+  resize: none;
+  font-size: 20px;
+  box-sizing: border-box;
+  outline: none;
+}
+.page .content .note_father .sub_note .subject .kkk {
+  display: none;
+}
+.page .content .note_father .sub_note .subject .subject_text {
+  width: 100%;
+  height: 90%;
+  background-color: white;
+  box-sizing: border-box;
+  padding-top: 3px;
+}
+.page .content .note_father .sub_note .subject .subject_text .text {
+  font-size: 20px;
+  margin: 0;
+  letter-spacing: 2px;
+}
