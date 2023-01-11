@@ -1,0 +1,79 @@
+:root {
+  --complete-border-color: #3498db;
+  --incomplete-border-color: #e0e0e0;
+}
+.page {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.page .content {
+  width: 500px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.page .content .progress_container {
+  width: 450px;
+  height: 50px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page .content .progress_container .line {
+  width: 0px;
+  height: 10px;
+  background-color: var(--complete-border-color);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  transition: width 0.4s ease;
+  z-index: -1;
+}
+.page .content .progress_container .progress {
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+  background-color: white;
+  text-align: center;
+  border: 5px solid var(--incomplete-border-color);
+  transition: all 0.4s ease;
+  color: #999;
+}
+.page .content .progress_container:before {
+  content: "";
+  width: 90%;
+  height: 10px;
+  background-color: var(--incomplete-border-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -2;
+}
+.page .content .progress_container .complete {
+  border-color: var(--complete-border-color);
+}
+.page .content .but_father {
+  width: 450px;
+  height: 45px;
+  box-sizing: border-box;
+  padding-left: 70px;
+  padding-right: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page .content .but_father button {
+  width: 70px;
+  height: 30px;
+  border-radius: 5px;
+}
