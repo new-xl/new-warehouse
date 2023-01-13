@@ -1,0 +1,94 @@
+.page {
+  width: 100vw;
+  height: 100vh;
+}
+.page .content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.page .content .right-side {
+  box-sizing: border-box;
+  width: 500px;
+  height: 70%;
+  position: absolute;
+  top: 50%;
+  right: 40px;
+  transform: translateY(-50%);
+  background-image: url(/static/images/图片1.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.page .content .center {
+  width: 600px;
+  height: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 30px;
+  box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+}
+.page .content .center .problem {
+  width: 100%;
+  flex: 2;
+  box-sizing: border-box;
+  padding: 20px 30px 10px 30px;
+  text-align: center;
+}
+.page .content .center .problem .problem_text {
+  font: normal bold 25px 宋体;
+  letter-spacing: 3px;
+  line-height: 28px;
+}
+.page .content .center .option_interface {
+  width: 100%;
+  flex: 7;
+  box-sizing: border-box;
+  padding: 20px 30px 20px 30px ;
+}
+.page .content .center .option_interface .option {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.page .content .center .option_interface .option .single {
+  display: flex;
+  align-items: center;
+}
+.page .content .center .option_interface .option .single input {
+  width: 15px;
+  height: 15px;
+  margin: 0;
+  margin-right: 10px;
+  vertical-align: baseline;
+  cursor: pointer;
+}
+.page .content .center .option_interface .option .single label {
+  font: normal bold 18px 宋体;
+  line-height: 18px;
+  cursor: pointer;
+}
+.page .content .center .option_interface .option h3 {
+  text-align: center;
+  letter-spacing: 5px;
+}
+.page .content .center .but_father {
+  width: 100%;
+  flex: 1;
+  font-size: 20px;
+  border-radius: 25px;
+}
+.page .content .center .but_father .but {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  cursor: pointer;
+}
