@@ -1,0 +1,48 @@
+.page {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: bisque;
+}
+.page .title {
+  flex: 2;
+  width: 100%;
+  text-align: center;
+  font: normal bold 35px 宋体;
+}
+.page .content {
+  flex: 8;
+  min-width: 100%;
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page .content .option_card {
+  margin: 20px;
+  width: 400px;
+  height: 150px;
+  background-color: aqua;
+  font: normal bold 50px 宋体;
+  text-align: center;
+  line-height: 150px;
+  color: white;
+  transition: transform 0.3s linear;
+}
+.page .content .option_card:nth-child(2n-1) {
+  transform: translateX(-400%);
+}
+.page .content .option_card:nth-child(2n) {
+  transform: translateX(400%);
+}
+.page .ttt {
+  align-items: center;
+}
+.page .ttt .option_card:nth-child(2n-1) {
+  transform: translateX(0);
+}
+.page .ttt .option_card:nth-child(2n) {
+  transform: translateX(0);
+}
