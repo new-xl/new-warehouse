@@ -1,0 +1,95 @@
+.page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+}
+.page .content {
+  box-sizing: border-box;
+  background-color: blue;
+  width: 900px;
+  padding: 40px;
+  box-shadow: 1px 2px black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.page .content .progress {
+  width: 100%;
+  height: 10px;
+  border-radius: 12px;
+  position: relative;
+}
+.page .content .progress .article {
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 12px;
+  background-color: white;
+  animation: article_movement 8s linear infinite;
+}
+.page .content .language {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  box-sizing: border-box;
+  padding: 5px 30px;
+}
+.page .content .language .text {
+  color: white;
+  line-height: 28px;
+  text-align: justify;
+}
+.page .content .language:before {
+  content: "";
+  width: 5px;
+  height: 50px;
+  background-color: red;
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+.page .content .language:after {
+  content: "";
+  width: 5px;
+  height: 50px;
+  background-color: red;
+  position: absolute;
+  top: 30px;
+  right: 0;
+}
+.page .content .character {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page .content .character .photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  background-image: url(https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.page .content .character .information {
+  margin-left: 30px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: white;
+}
+@keyframes article_movement {
+  to {
+    width: 100%;
+  }
+}

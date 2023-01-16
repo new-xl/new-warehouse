@@ -1,0 +1,107 @@
+.page {
+  width: 100vw;
+  min-height: 100vh;
+}
+.page .content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page .content .navigation_interface {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 999;
+}
+.page .content .navigation_interface .navigation {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 30px 300px 30px 300px;
+}
+.page .content .navigation_interface .navigation .logo {
+  width: 100px;
+  height: 100%;
+  font-size: 45px;
+  text-align: center;
+  margin: 0;
+  color: black;
+}
+.page .content .navigation_interface .navigation .nav {
+  width: 500px;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.page .content .navigation_interface .navigation .nav a {
+  font: normal bold 25px 宋体;
+  text-decoration: none;
+  color: black;
+}
+.page .content .ttt {
+  background-color: black;
+}
+.page .content .ttt .navigation .logo {
+  color: white;
+}
+.page .content .ttt .navigation .nav a {
+  color: white;
+}
+.page .content .img_interface {
+  width: 100%;
+  height: 800px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page .content .img_interface .image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+.page .content .img_interface .img_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.page .content .img_interface .img_text .title {
+  font-size: 25px;
+  letter-spacing: 3px;
+}
+.page .content .img_interface .img_text .details {
+  margin-top: 20px;
+  font-size: 12px;
+}
+.page .content .img_interface:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  background-color: black;
+  z-index: -1;
+}
+.page .content .article_interface {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 300px 10px 300px;
+}
+.page .content .article_interface .article {
+  border-bottom: 1px solid gray;
+}
+.page .content .article_interface .article .subject {
+  line-height: 30px;
+}
