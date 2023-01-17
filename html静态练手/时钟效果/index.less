@@ -1,0 +1,147 @@
+:root{
+    --main-white-color:white;
+    --main-black-color:black;
+}
+.page{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-white-color);
+    .content{
+        width: 800px;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 20px;
+        position: relative;
+        .change_background{
+            width: 60px;
+            height: 30px;
+            border-radius: 13px;
+            box-shadow: 1px 1px black;
+            background-color: blanchedalmond;
+            cursor:pointer;
+        }
+        .mode{
+            position: absolute;
+            width: 100px;
+            height: 30px;
+            top: 50%;
+            right: 40px;
+            transform:translateY(-50%);
+            background-color: antiquewhite;
+            text-align: center;
+            border-radius: 12px;
+            line-height: 30px;
+            opacity: 0;
+            transition: opacity 1s linear;
+        }
+        .bbb{
+            opacity: 1;
+        }
+        .clock_interface{
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .clock{
+                width: 400px;
+                height: 400px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .center{
+                    width: 12px;
+                    height: 12px;
+                    border-radius:12px;
+                    position: relative;
+                    &:before{
+                        content: "";
+                        width: 12px;
+                        height: 12px;
+                        border-radius: 12px;
+                        background-color: var(--main-white-color);
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        border: 1px solid red;
+                        z-index: 1;
+
+                    }
+                    .line{
+                        width: 4px;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        margin-left: -2px;
+                        transform-origin: bottom center;
+                        transition: transform .5s linear;
+                    }
+                    .hour{
+                        height: 60px;
+                        background-color: var(--main-black-color);
+                        margin-top: -60px;
+                        transform: rotate(0deg);
+                    }
+                    .minutes{
+                        height: 120px;
+                        background-color: var(--main-black-color);
+                        margin-top: -120px;
+                        transform: rotate(0deg);
+                    }
+                    .seconds{
+                        height: 140px;
+                        background-color: red;
+                        margin-top: -140px;
+                        transform: rotate(0deg);
+                    }
+                }
+            }
+            .time_text{
+                margin-top: 30px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .time{
+                    color: var(--main-black-color);
+                    font-size: 50px;
+                    letter-spacing: 3px;
+                }
+                .month{
+                    margin-top: 15px;
+                    color: gray;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+.ttt{
+    background-color: var(--main-black-color);
+    .content{
+        .clock_interface{
+            .clock{
+                .center{
+                    .hour{
+                        background-color: var(--main-white-color);
+                    }
+                    .minutes{
+                        background-color: var(--main-white-color);
+                    }
+                }
+            }
+            .time_text{
+                .time{
+                    color: var(--main-white-color);
+                }
+            }
+        }
+    }
+}
+
